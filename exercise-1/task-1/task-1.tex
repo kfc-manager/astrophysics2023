@@ -4,7 +4,101 @@ a) Consider a planet on an elliptical orbit around the Sun, with semimajor axis 
 excentricity $\epsilon$. Derive a formula for the maximum and the minimum distance of the planet to the
 Sun, given $a$ and $\epsilon$.\\
 \\
+In the lecture given, is the formula for the excentricity calculated with the distance of the centre of an 
+ellipse to the focal point $f$ the following:
+\begin{equation*}
+    \epsilon = \frac{f}{a}\\
+\end{equation*}
+with that we can derive a formula to calculate $f$:
+\begin{equation*}
+    f = \epsilon \cdot a\\
+\end{equation*}
+Additional with that distance we can derive formulas of the maximum $d_{max}$:
+\begin{equation*}
+    \begin{split}
+        d_{max} &= a + f\\
+                &= a + a \cdot \epsilon\\
+                &= a \cdot (\epsilon + 1)
+    \end{split}
+\end{equation*}
+and the minimum distance $d_{min}$:
+\begin{equation*}
+    \begin{split}
+        d_{min} &= a - f\\
+                &= a - a \cdot \epsilon\\
+                &= a \cdot (\epsilon - 1)
+    \end{split}
+\end{equation*}
 b) Kepler's second law states that the orbital speed on an elliptical orbit varies in a systematic way.
 Derive a formula similar to a), but now for the maximum and the minimum orbital speed.\\
 \\
-c) Calculate the ratio between the maximum and the minimum 
+With the vis-viva equation we can determine the velocity of a body on an elliptical sphere:
+\begin{equation*}
+    \begin{split}
+        v^2 &= G (M + m) \biggl(\frac{2}{r} - \frac{1}{a}\biggr)\\
+        v   &= \sqrt{G (M + m) \biggl(\frac{2}{r} - \frac{1}{a}\biggr)}\\
+    \end{split}
+\end{equation*}
+If we now insert the maximum and the minimum distances we receive the formula for the maximum and the
+minimum orbital speed respectively:
+\begin{equation*}
+    v_{max} = \sqrt{G (M + m) \biggl(\frac{2}{d_{max}} - \frac{1}{a}\biggr)}\\
+\end{equation*}
+and:
+\begin{equation*}
+    v_{min} = \sqrt{G (M + m) \biggl(\frac{2}{d_{min}} - \frac{1}{a}\biggr)}\\
+\end{equation*}
+c) Calculate the ratio between the maximum and the minimum distances to the Sun for the Earth and for 
+the planet Mercury. Calculate also the ratio between the maximum and the minimum orbital velocities for
+both planets.\\
+\\
+We use the following formula to calculate the ratio of the maximum and minimum distances ratio:
+\begin{equation*}
+    \begin{split}
+        \frac{d_{max}}{d_{min}} &= \frac{a \cdot (\epsilon + 1)}{a \cdot (\epsilon - 1)}\\
+        &= \frac{\epsilon + 1}{\epsilon - 1}
+    \end{split}
+\end{equation*}
+\textbf{Earth:}
+\begin{equation*}
+    \begin{split}
+        \frac{d_{max}}{d_{min}} &= \frac{\epsilon + 1}{\epsilon - 1}\\
+        &= \frac{0.017 + 1}{0.017 - 1}\\
+        &= \frac{0.017 + 1}{0.017 - 1}\\
+        &= \frac{1.017}{-0.983}\\
+        &\approx - 1.0346
+    \end{split}
+\end{equation*}
+\textbf{Mercury:}
+\begin{equation*}
+    \begin{split}
+        \frac{d_{max}}{d_{min}} &= \frac{\epsilon + 1}{\epsilon - 1}\\
+        &= \frac{0.206 + 1}{0.206 - 1}\\
+        &= \frac{0.206 + 1}{0.206 - 1}\\
+        &= \frac{1.206}{-0.794}\\
+        &\approx - 1.5189
+    \end{split}
+\end{equation*}
+For the ratio of the maximum and minimum orbital velocity we can use:
+\begin{equation*}
+    \begin{split}
+        \frac{v_{max}}{v_{min}} &= \frac{\sqrt{G (M + m) \biggl(\frac{2}{d_{max}} - \frac{1}{a}\biggr)}}{\sqrt{G (M + m) \biggl(\frac{2}{d_{min}} - \frac{1}{a}\biggr)}}\\
+                                &= \frac{\sqrt{\biggl(\frac{2}{d_{max}} - \frac{1}{a}\biggr)}}{\sqrt{\biggl(\frac{2}{d_{min}} - \frac{1}{a}\biggr)}}
+    \end{split}
+\end{equation*}
+\textbf{Earth:}
+\begin{equation*}
+    \begin{split}
+        \frac{v_{max}}{v_{min}} &= \frac{\sqrt{\biggl(\frac{2}{d_{max}} - \frac{1}{a}\biggr)}}{\sqrt{\biggl(\frac{2}{d_{min}} - \frac{1}{a}\biggr)}}\\
+                                &= \frac{\sqrt{\biggl(\frac{2}{1.017} - \frac{1}{1}\biggr)}}{\sqrt{\biggl(\frac{2}{0.983} - \frac{1}{1}\biggr)}}\\
+                                &= \frac{\sqrt{\biggl(\frac{2}{1.017} - 1\biggr)}}{\sqrt{\biggl(\frac{2}{0.983} - 1\biggr)}}\\
+    \end{split}
+\end{equation*}
+\textbf{Mercury:}
+\begin{equation*}
+    \begin{split}
+        \frac{v_{max}}{v_{min}} &= \frac{\sqrt{\biggl(\frac{2}{d_{max}} - \frac{1}{a}\biggr)}}{\sqrt{\biggl(\frac{2}{d_{min}} - \frac{1}{a}\biggr)}}\\
+                                &= \frac{\sqrt{\biggl(\frac{2}{1.206} - \frac{1}{1}\biggr)}}{\sqrt{\biggl(\frac{2}{0.794} - \frac{1}{1}\biggr)}}\\
+                                &= \frac{\sqrt{\biggl(\frac{2}{1.206} - 1\biggr)}}{\sqrt{\biggl(\frac{2}{0.794} - 1\biggr)}}\\
+    \end{split}
+\end{equation*}
